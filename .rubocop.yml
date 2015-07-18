@@ -1,0 +1,9 @@
+AllCops:
+  Exclude:
+    - '*.gemspec'
+
+Style/Documentation:
+  Enabled: false
+
+Style/MultilineOperationIndentation:
+  Enabled: false
