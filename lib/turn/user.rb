@@ -2,15 +2,15 @@ require 'git'
 
 module Turn
   class User
-    def email
+    def self.email
       Git.global_config 'user.email'
     end
 
-    def name
+    def self.name
       Git.global_config 'user.name'
     end
 
-    def github
+    def self.github
       Git.global_config 'github.user'
     end
   end
