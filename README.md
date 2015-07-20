@@ -1,6 +1,6 @@
 # turnt
 
-[![Build Status](https://travis-ci.org/macklinu/turn.svg)](https://travis-ci.org/macklinu/turn)
+[![Build Status](https://travis-ci.org/macklinu/turnt.svg)](https://travis-ci.org/macklinu/turnt)
 
 _Like hype for a party, or at the club!  -[Urban Dictionary](http://www.urbandictionary.com/define.php?term=Turnt&defid=4396644)_
 
