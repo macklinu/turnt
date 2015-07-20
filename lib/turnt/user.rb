@@ -1,5 +1,14 @@
 module Turnt
   class User
+    def self.as_pair
+      pair_hash = {
+          email: self.email,
+          name: self.name,
+          github: self.github
+      }
+      Turnt::Pair.new pair_hash
+    end
+
     def self.email
       GitUtils.global_config 'user.email'
     end

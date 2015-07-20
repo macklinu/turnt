@@ -4,13 +4,13 @@ module Turnt
   class PreCommitHook
     HOOK_NAME = 'post-commit'
 
-    def self.install
+    def self.install(author_string)
       FileUtils.cd git_hook_directory do
         FileUtils.rm HOOK_NAME, force: true
         File.open(HOOK_NAME, 'w') do |file|
           file.puts '#!/usr/bin/env bash'
           file.puts
-          file.puts 'git commit --amend --no-edit'
+          file.puts "git commit --amend --no-edit --author=#{author_string}"
         end
       end
     end
