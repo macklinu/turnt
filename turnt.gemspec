@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'turn/version'
+require 'turnt/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'turn'
-  spec.version       = Turn::VERSION
+  spec.name          = 'turnt'
+  spec.version       = Turnt::VERSION
   spec.authors       = ['Macklin Underdown']
   spec.email         = ['macklinu@gmail.com']
 
   spec.summary       = 'Commit as a pair in the most exciting way possible.'
-  spec.homepage      = 'https://github.com/macklinu/turn'
+  spec.homepage      = 'https://github.com/macklinu/turnt'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
