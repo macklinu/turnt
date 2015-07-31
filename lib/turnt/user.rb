@@ -2,9 +2,9 @@ module Turnt
   class User
     def self.as_pair
       pair_hash = {
-          email: self.email,
-          name: self.name,
-          github: self.github
+        email: email,
+        name: name,
+        github: github
       }
       Turnt::Pair.new pair_hash
     end
